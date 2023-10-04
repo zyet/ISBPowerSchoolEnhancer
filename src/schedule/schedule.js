@@ -24,9 +24,9 @@ var HttpClient = function () {
 }
 
 var client = new HttpClient();
-var homepage = 'https://powerschool.isb.ac.th/guardian/home.html';
+var homepage = 'https://icsabuja.powerschool.com/guardian/home.html';
 
-client.get('https://powerschool.isb.ac.th/guardian/myschedule.html', function (scheddata) {
+client.get('https://icsabuja.powerschool.com/guardian/home.html', function (scheddata) {
 
   // Check if request yielded a login instead of a sign in page.
   if (scheddata.indexOf('Student and Parent Sign In') == - 1
